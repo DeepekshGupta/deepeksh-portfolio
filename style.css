@@ -747,6 +747,8 @@ nav.scrolled {
   line-height: 1.7;
   font-size: 0.95rem;
 }
+.timeline-desc-bold { color: var(--text); font-weight: 500; }
+
 
 /* ── Contact ────────────────────────────────────────────── */
 #contact {
