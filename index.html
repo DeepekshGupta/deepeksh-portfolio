@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Full-Stack Developer</title>
+  <meta name="description" content="Full-Stack Developer specializing in building exceptional digital experiences that live on the internet." />
+  <meta property="og:title" content="Your Name — Full-Stack Developer" />
+  <meta property="og:description" content="Full-Stack Developer crafting exceptional digital experiences." />
+  <meta property="og:type" content="website" />
+  <!-- Favicon placeholder — replace with your own -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <!-- Satoshi from CDN -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Reading Progress -->
+  <div id="progress-bar"></div>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav>
+    <a href="#hero" class="nav-logo">Y<span>.</span>N</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-close" aria-label="Close menu">✕</button>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ── Hero ───────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Available for freelance &amp; full-time roles</p>
+      <h1 class="hero-name">
+        Your<br />
+        <em>Name.</em>
+      </h1>
+      <p class="hero-role">
+        <strong><span id="hero-typewriter">Full-Stack Developer</span></strong> — building
+        fast, accessible &amp; beautifully crafted web experiences with modern technologies.
+        Turning complex problems into elegant solutions.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          View My Work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-secondary">
+          Get In Touch
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image-container reveal">
+      <div class="hero-img-frame">
+        <img src="assets\placeholder_photo_1.jpeg" alt="Your Name" class="hero-photo" />
+        <div class="hero-img-deco"></div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+    <div class="hero-counter">
+      <strong data-target="5">0</strong>
+      <br/>years of experience
+    </div>
+  </section>
+
+  <!-- ── About ──────────────────────────────────────────── -->
+  <section id="about">
+    <div class="about-visual reveal">
+      <div class="about-deco-num">5</div>
+      <div class="about-img-wrap">
+        <!-- Replace with: <img src="assets/photo.jpg" alt="Your Name" class="about-photo" /> -->
+        <div class="about-photo-placeholder">
+          <span>
+                    <img src="assets\placeholder_photo_2.jpeg" alt="Your Name" class="hero-photo" />
+          </span>
+        </div>
+      </div>
+      <div class="about-badge">
+        <div class="num" data-target="30">0</div>
+        <div class="label">Projects<br/>Shipped</div>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="section-label reveal">About Me</p>
+      <h2 class="reveal reveal-delay-1">
+        I craft code that<br/>
+        <em>makes things</em> happen.
+      </h2>
+      <p class="reveal reveal-delay-2">
+        Hey! I'm <strong>Your Name</strong>, a Full-Stack Developer based in
+        <strong>Your City</strong>. I specialize in building scalable, performant
+        web applications — from thoughtful UI to robust back-end architecture.
+      </p>
+      <p class="reveal reveal-delay-3">
+        With <strong>5+ years</strong> of experience, I've worked across startups
+        and mid-size companies, shipping products used by thousands of real users.
+        I'm obsessed with clean code, great design, and developer experience.
+      </p>
+      <div class="about-tags reveal reveal-delay-4">
+        <span class="about-tag">React / Next.js</span>
+        <span class="about-tag">Node.js</span>
+        <span class="about-tag">TypeScript</span>
+        <span class="about-tag">PostgreSQL</span>
+        <span class="about-tag">AWS / GCP</span>
+        <span class="about-tag">Docker</span>
+        <span class="about-tag">GraphQL</span>
+        <span class="about-tag">Open Source</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ─────────────────────────────────────────── -->
+  <section id="skills">
+    <div class="skills-inner">
+      <div class="skills-header">
+        <p class="section-label reveal">Expertise</p>
+        <h2 class="reveal reveal-delay-1">What I work with</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <span class="skill-icon">🎨</span>
+          <h3>Frontend</h3>
+          <div class="skill-items">
+            <span class="skill-item">React</span>
+            <span class="skill-item">Next.js</span>
+            <span class="skill-item">TypeScript</span>
+            <span class="skill-item">Tailwind CSS</span>
+            <span class="skill-item">Framer Motion</span>
+            <span class="skill-item">Vue.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1">
+          <span class="skill-icon">⚙️</span>
+          <h3>Backend</h3>
+          <div class="skill-items">
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">Express</span>
+            <span class="skill-item">Python</span>
+            <span class="skill-item">FastAPI</span>
+            <span class="skill-item">REST / GraphQL</span>
+            <span class="skill-item">WebSockets</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-2">
+          <span class="skill-icon">🗄️</span>
+          <h3>Database</h3>
+          <div class="skill-items">
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">MongoDB</span>
+            <span class="skill-item">Redis</span>
+            <span class="skill-item">Prisma</span>
+            <span class="skill-item">Supabase</span>
+            <span class="skill-item">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-3">
+          <span class="skill-icon">☁️</span>
+          <h3>DevOps &amp; Cloud</h3>
+          <div class="skill-items">
+            <span class="skill-item">AWS</span>
+            <span class="skill-item">GCP</span>
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">CI/CD</span>
+            <span class="skill-item">GitHub Actions</span>
+            <span class="skill-item">Vercel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ───────────────────────────────────────── -->
+  <section id="projects" style="padding-top: 140px; padding-bottom: 0;">
+    <div style="max-width:1300px; margin: 0 auto; padding: 0 60px 80px;">
+      <div class="projects-header">
+        <div>
+          <p class="section-label reveal">Selected Work</p>
+          <h2 class="reveal reveal-delay-1">Things I've built</h2>
+        </div>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="btn-secondary reveal">
+          View All on GitHub
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Featured Project -->
+      <div class="project-card reveal">
+        <div class="project-bg"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content">
+          <p class="project-num">01 / Featured</p>
+          <h3>Project Alpha — SaaS Platform</h3>
+          <p class="project-desc">
+            A full-stack SaaS platform for team productivity. Features real-time collaboration,
+            role-based access control, and a custom analytics dashboard. Serving 10k+ active users.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">Stripe</span>
+            <span class="project-tag">AWS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank" rel="noopener">
+              Live Demo
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="#" class="project-link" target="_blank" rel="noopener">
+              GitHub
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-deco">View</div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-bg"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content">
+          <p class="project-num">02</p>
+          <h3>E-Commerce Engine</h3>
+          <p class="project-desc">
+            Headless commerce solution with a custom CMS, blazing-fast SSG storefront, and a payment pipeline.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Sanity</span>
+            <span class="project-tag">Stripe</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" class="project-link" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="project-deco">View</div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-bg"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content">
+          <p class="project-num">03</p>
+          <h3>AI-Powered Dashboard</h3>
+          <p class="project-desc">
+            Analytics dashboard with AI-driven insights, real-time data streams, and customizable reports.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">OpenAI API</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" class="project-link" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="project-deco">View</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Experience ─────────────────────────────────────── -->
+  <section id="experience">
+    <div class="experience-inner">
+      <p class="section-label reveal">Career</p>
+      <h2 class="reveal reveal-delay-1">Where I've worked</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <p class="timeline-date">Jan 2023 — Present</p>
+          <p class="timeline-role">Senior Full-Stack Developer</p>
+          <p class="timeline-company">Awesome Tech Company — Remote</p>
+          <p class="timeline-desc">
+            Lead development of the core product platform. Architected and shipped a
+            real-time collaboration engine reducing latency by 60%. Mentored a team of
+            4 junior developers. Drove adoption of TypeScript and automated testing
+            across the engineering org.
+          </p>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <p class="timeline-date">Mar 2021 — Dec 2022</p>
+          <p class="timeline-role">Full-Stack Developer</p>
+          <p class="timeline-company">Cool Startup Inc. — Your City</p>
+          <p class="timeline-desc">
+            Built and maintained multiple customer-facing product features. Migrated a
+            legacy monolith to a microservices architecture on AWS. Improved core API
+            response time by 40% through query optimization and Redis caching.
+          </p>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <p class="timeline-date">Jun 2020 — Feb 2021</p>
+          <p class="timeline-role">Frontend Developer</p>
+          <p class="timeline-company">Digital Agency XYZ — Your City</p>
+          <p class="timeline-desc">
+            Delivered pixel-perfect, performant frontends for 10+ client projects.
+            Introduced component-driven development with React, cutting design-to-dev
+            handoff time by 30%. Also contributed to in-house UI component library.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="contact-bg"></div>
+    <div class="contact-inner">
+      <p class="section-label reveal">Contact</p>
+      <h2 class="reveal reveal-delay-1">
+        Let's build<br/>
+        <em>something</em> great.
+      </h2>
+      <p class="reveal reveal-delay-2">
+        I'm always open to interesting projects, collaborations, or just a good
+        conversation about technology and design. My inbox is always open.
+      </p>
+      <div class="reveal reveal-delay-3">
+        <a href="mailto:hello@yourname.dev" class="contact-email">
+          hello@yourname.dev
+        </a>
+      </div>
+      <a href="mailto:hello@yourname.dev" class="btn-primary reveal reveal-delay-3" style="margin: 0 auto; display: inline-flex;">
+        Say Hello
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </a>
+      <div class="social-links reveal reveal-delay-4">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          Twitter
+        </a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer>
+    <span>© 2025 Your Name. Designed &amp; Built with ♥</span>
+    <span>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">Source on GitHub</a>
+    </span>
+  </footer>
+
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
