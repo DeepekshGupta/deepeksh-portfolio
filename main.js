@@ -180,3 +180,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+ const images = [
+  "https://drive.google.com/thumbnail?id=1gzU7c-FRT-J9LrSn7n7pTM4R4fC0DRLh&sz=w1000", //101
+  "https://drive.google.com/thumbnail?id=1jmyThdfYkEEjZKwyHL4SVMsSFOMEAAQM&sz=w1000", //103
+  "https://drive.google.com/thumbnail?id=1Ak45KgsBMFP8krovmru7pnp0qXVfcJ0f&sz=w1000", //104
+  "https://drive.google.com/thumbnail?id=1xk03Nu-B0fBgpsD4WJJ5z20VYRZBIe0y&sz=w1000"  //105
+  ];
+  const randomImage = images[Math.floor(Math.random() * images.length)];
+  document.getElementById("aboutPhoto").src = randomImage;
